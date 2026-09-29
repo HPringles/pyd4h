@@ -16,7 +16,7 @@ class MemberModule(D4HModule):
 
     def get_by_name(self, name: str = None, full_info: bool = False) -> Member | Member_EssentialOnly:
         res = self._get("members", params={"name": name, "status": ["NON_OPERATIONAL", "OBSERVER", "OPERATIONAL", "RETIRED"]})
-        print(res)
+        # print(res)
         if isinstance(res, list):
             res = res[0]
         else:

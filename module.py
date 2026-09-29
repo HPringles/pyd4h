@@ -64,7 +64,7 @@ class D4HModule:
         if res.ok:
             return res.json()
         else:
-            print(res.json())
+            # print(res.json())
             raise D4HException(f"error: {res.status_code}: {res.reason}")
 
     def _del(self, endpoint: str, ignore_context: bool = False, **kwargs) -> dict[any, any]:
@@ -73,5 +73,5 @@ class D4HModule:
         if res.ok:
             return res.json()
         else:
-            print(res.json())
+            # print(res.json())
             raise D4HException(f"error: {res.status_code}: {res.reason}")

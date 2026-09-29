@@ -1,2 +1,6 @@
+# Install the library in editable mode:
+#   pip install -e .
+#
+# Or install runtime dependencies only:
 requests
 msgspec
